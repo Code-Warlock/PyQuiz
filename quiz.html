@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+
+  <head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./css/quiz.css" type="text/css" media="all" />
+    <script src="./js/quiz.js" defer></script>
+    <title>Document</title>
+  </head>
+
+  <body>
+    <div class="banner" role="banner">
+      <h1>PyQuiz</h1>
+      <p>Not for the weak foobar :(-</p>
+    </div>
+    <div class="score d-none">
+      <div class="score-modal">
+        <p class="score-text">You scored <span class="score-reveal"></span>% </p>
+      </div>
+    </div>
+    <div class="quiz-content">
+      <div class="quiz-group">
+        <h1 class="quiz-heading">
+          What is the name of the 20-line text that will be displayed when the command <code>'import this' </code> ; is
+          executed ? </h1>
+      </div>
+      <form class="form-questions" name="questions">
+        <div class="answer-group">
+          <input id="four" type="radio" name="one" value="A">
+          <label for="four">Zen</label>
+        </div>
+        <div class="answer-group">
+          <input id="three" type="radio" name="one" value="B">
+          <label for="three">To bring python into your application</label>
+        </div>
+        <div class="answer-group">
+          <input id="two" type="radio" name="one" value="C">
+          <label for="two">A module that allows you to configure namespaces</label>
+        </div>
+        <div class="answer-group">
+          <input id="one" type="radio" name="one" value="D">
+          <label for="one">Boilerplate</label>
+        </div>
+        <button type="button" class="prev">Previous</button>
+        <button type="submit" class="next">Next</button>
+      </form>
+    </div>
+    <svg>
+      <circle cx="20" cy="-20" r="200" stroke="#fff" fill="#680194" stroke-width="40">
+    </svg>
+  </body>
+
+</html>
