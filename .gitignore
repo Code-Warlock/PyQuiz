@@ -6,5 +6,5 @@ data/
 *.js
 *.html
 !quiz.css
-!quiz.html
+!index.html
 !quiz.js
