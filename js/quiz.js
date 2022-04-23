@@ -78,7 +78,3 @@ BUTTON.addEventListener('click', e => {
   }
   console.log(userAnswers);
 });
-
-// setTimeout(() => {
-  
-// }, 1000);
