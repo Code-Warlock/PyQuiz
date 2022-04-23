@@ -1,0 +1,10 @@
+.vscode/
+img/
+python/
+data/
+*.css
+*.js
+*.html
+!quiz.css
+!index.html
+!quiz.js
