@@ -6,7 +6,7 @@
   padding: 0;
   box-sizing: border-box;
   font-size: 16px;
-  transition: all 1s ease-in-out;
+  transition: all .5s ease-in-out;
 }
 
 body {
@@ -21,7 +21,8 @@ body {
   ;
   grid-template-rows: 1fr 1.2fr;
 }
-input[type*="adi"]{
+
+input[type*="adi"] {
   outline: none;
   border: 0;
 }
@@ -123,6 +124,7 @@ form.form-questions>button {
 }
 
 
+
 form.form-questions>button:last-child {
   float: right;
 }
@@ -150,11 +152,11 @@ form.form-questions>div.answer-group>* {
   margin: .3rem .5rem;
   cursor: pointer;
 }
-.d-none{
-  display: none;
-}
-div.score{
+
+
+div.score {
   position: absolute;
+  display:none;
   top: 0;
   left: 0;
   min-width: 100vw;
@@ -162,8 +164,24 @@ div.score{
   min-height: 100vh;
   background-color: #0008;
   backdrop-filter: blur(2px);
+  transition: all .5s ease-in-out;
+  animation: show 1s ease-out 1 forwards;
 }
-div.score > div.score-modal{
+div.remove {
+  position: absolute;
+  display:flex;
+  top: 0;
+  left: 0;
+  min-width: 100vw;
+  z-index: 5;
+  min-height: 100vh;
+  background-color: #0008;
+  backdrop-filter: blur(2px);
+  transition: all .5s ease-in-out;
+  animation: remove 1s ease-out 1 forwards;
+}
+
+div.remove>div.score-modal , div.score>div.score-modal  {
   position: absolute;
   border-radius: 5px;
   top: 20%;
@@ -175,7 +193,24 @@ div.score > div.score-modal{
   height: 50%;
   display: flex;
   justify-content: center;
-  /* align-items: center; */
   box-sizing: border-box;
-  padding-top:150px;
+  padding-top: 150px;
+}
+@keyframes show {
+  0% {
+    opacity: 0
+  }
+
+  100% {
+    opacity: 1
+  }
+}
+@keyframes remove {
+  0% {
+    opacity: 1
+  }
+
+  100% {
+    opacity: 0
+  }
 }
