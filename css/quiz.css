@@ -56,6 +56,15 @@ div.banner>*:first-child {
 
 }
 
+div.banner>*:last-child {
+  position: absolute;
+  width: 4rem;
+  height:4rem;
+  z-index: 4;
+  top: 20px;
+  left: 1px;
+}
+
 div.banner> :not(div.banner > *:first-child) {
   font-style: oblique;
   transform: translateY(-20px);
@@ -156,7 +165,7 @@ form.form-questions>div.answer-group>* {
 
 div.score {
   position: absolute;
-  display:none;
+  display: none;
   top: 0;
   left: 0;
   min-width: 100vw;
@@ -167,9 +176,10 @@ div.score {
   transition: all .5s ease-in-out;
   animation: show 1s ease-out 1 forwards;
 }
+
 div.remove {
   position: absolute;
-  display:flex;
+  display: flex;
   top: 0;
   left: 0;
   min-width: 100vw;
@@ -181,7 +191,8 @@ div.remove {
   animation: remove 1s ease-out 1 forwards;
 }
 
-div.remove>div.score-modal , div.score>div.score-modal  {
+div.remove>div.score-modal,
+div.score>div.score-modal {
   position: absolute;
   border-radius: 5px;
   top: 20%;
@@ -196,6 +207,7 @@ div.remove>div.score-modal , div.score>div.score-modal  {
   box-sizing: border-box;
   padding-top: 150px;
 }
+
 @keyframes show {
   0% {
     opacity: 0
@@ -205,6 +217,7 @@ div.remove>div.score-modal , div.score>div.score-modal  {
     opacity: 1
   }
 }
+
 @keyframes remove {
   0% {
     opacity: 1
