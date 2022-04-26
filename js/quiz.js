@@ -61,6 +61,8 @@ FORM.addEventListener('submit', e => {
   } else {
     document.location.reload();
   }
+  FORM.reset();
+
 });
 PREV.addEventListener('click', e => {
   count = count - 1;
